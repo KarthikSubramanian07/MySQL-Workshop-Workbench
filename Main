@@ -1,0 +1,17 @@
+create database Fridays;
+use Frida;
+CREATE TABLE practice (
+    ID int primary key auto_Increment,
+    Store varchar(50) not null,
+    item varchar(50) not null,
+    qty int,
+    ordered date
+);
+
+insert into practice (Store, item, inventory, qty = 0)
+VALUES ('Another Store', 'something', '6'),
+('Bad Store', 'something', '6'),
+('Good Store', 'something', '6');
+
+select * from practice;
+describe practice;
